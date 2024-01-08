@@ -13,7 +13,7 @@
 //   </div>
 // </div>;
 
-const parent = React.createElement(
+const parent = React.createElement( 
   "div",
   { id: "parent" },
 
