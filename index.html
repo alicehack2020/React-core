@@ -21,5 +21,12 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
+
+    <script>
+      const heading = React.createElement("h1", {}, "welcome back");
+      console.log(heading);
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(heading);
+    </script>
   </body>
 </html>
