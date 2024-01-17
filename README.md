@@ -5,8 +5,8 @@
 # parcel is beast
 
 https://parceljs.org/
-
 https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25zICA%3D
+https://babeljs.io/
 
 npx vs npm
 package.json vs package-lock.json
