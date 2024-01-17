@@ -1,29 +1,27 @@
-// const heading = React.createElement("h1", { id: "heading" }, "hello world");
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// console.log(heading); //object
+//element
+const elem = <span> element</span>;
+//element
+const jsxHeading = <h1 className="heading">Welcome to Jsx{elem}</h1>;
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading); //convet into html and put into dom
-
-//1. build this here--------------------->
-// <div id="parent">
-//   <div id="child">
-//     <h1>hello world 1</h1>
-//     <h2>hello world 2</h2>
-//   </div>
-// </div>;
-
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "hello world 1"),
-    React.createElement("h1", {}, "hello world 2"),
-  ])
+//functional component
+const Title = () => (
+  <div>
+    <h1 className="demo">demo</h1>
+  </div>
 );
 
-//jsx will help us to make this code to readable code 
+//component composition
+const Component = () => (
+  <div>
+    {jsxHeading}
+    <h1>main</h1>
+    <Title />
+  </div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+root.render(<Component />);
